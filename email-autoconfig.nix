@@ -254,7 +254,7 @@ in
   };
 
   config = mkIf cfg.enable {
-    nginx = {
+    services.nginx = {
       enable = true;
 
       virtualHosts = {
